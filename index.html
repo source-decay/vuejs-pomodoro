@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="style/css/normalize.css">
+    <link rel="stylesheet" href="style/css/index.css">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="app/timer.js"></script>
+
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>Pomodoro Timer</h1>
+      <div id="controls">
+        <button class="btn" :disabled="mins >= max" v-on:click="adjustTime('up')"></button>
+        <button class="btn" :disabled="mins <= min" v-on:click="adjustTime('down')"></button>
+        <button class="btn btn-good" v-if="isRunning === false" v-on:click="start()"></button>
+        <button class="btn btn-bad" v-else v-on:click="stop()"></button>
+        <button class="btn btn-cau" v-on:click="reset()"></button>
+      </div>
+      <div id="clock-body">
+        <div class="clock-face">
+          <span id="time">{{ mins | time }} : {{ secs | time }}</span>
+        </div>
+      </div>
+      <div class="clock-base">
+      </div>
+    </div>
+    <div class="social">
+      <span>
+        <a href="https://github.com/source-decay">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </span>
+    </div>
+  </body>
+</html>
