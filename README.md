@@ -4,8 +4,7 @@
  ![screenshot](./screenshot.png)
 
  I built this for FreeCodeCamp's Advanced Front-End Dev challenge on the way to earning my Front-End
- certification. A working demo of this project can be found __[here](https://codepen.io/source-decay/full/vJgLwp/)
-__.
+ certification. A working demo of this project can be found [__here__](https://codepen.io/source-decay/full/vJgLwp/).
 
  Right now, it only tracks the "work" section of the pomodoro but I will be working to add in the "rest"
  section of the pomodoro as well.
