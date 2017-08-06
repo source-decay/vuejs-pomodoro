@@ -1,8 +1,11 @@
 ## Vuejs Pomodoro Clock ##
  A simple clock that allows you to implelment the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique).
 
+ ![screenshot](./screenshot.png)
+
  I built this for FreeCodeCamp's Advanced Front-End Dev challenge on the way to earning my Front-End
- certification.
+ certification. A working demo of this project can be found __[here](https://codepen.io/source-decay/full/vJgLwp/)
+__.
 
  Right now, it only tracks the "work" section of the pomodoro but I will be working to add in the "rest"
  section of the pomodoro as well.
